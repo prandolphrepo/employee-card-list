@@ -6,11 +6,11 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.employee.employee.models.Employee;
+import com.employee.employee.models.Employees;
 
 @Repository
-public interface EmployeeRepo extends JpaRepository<Employee, Long> {
+public interface EmployeeRepo extends JpaRepository<Employees, Long> {
 
-    Optional<List<Employee>> findAllById();
+    List<Employees> findAll();
     
 }

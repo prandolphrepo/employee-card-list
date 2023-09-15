@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Employee Form</title>
+</head>
+<body>
+    <main>
+        <h1>Employee Form</h1>
+        <form action="#" th:action="@{/employee}" th:object="${employees}" method="post">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" th:field="*{firstName}"name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" th:field="*{lastName}" name="lastName">
+            <label for="companyName">Company Name</label>
+            <input type="text" id="companyName" th:field="*{companyName}" name="companyName">
+            <label for="companyRoleName">Company Role</label>
+            <input type="text" id="companyRoleName" th:field="*{role}" name="companyRoleName">
+            <label for="age">Age</label>
+            <input type="text" id="age" th:field="*{age}" name="age">
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        </form>
+    </main>
+</body>
+</html>

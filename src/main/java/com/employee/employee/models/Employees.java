@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Employee {
+public class Employees {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,20 @@ public class Employee {
     private String lastName;
 
     @Column
-    private int Age;
+    private int age;
+
+
+    public Employees(){
+        
+    }
+
+    public Employees(String companyName, String role, String firstName, String lastName, int age) {
+        this.companyName = companyName;
+        this.role = role;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
 
     public long getId() {
         return id;
@@ -48,12 +61,31 @@ public class Employee {
         this.lastName = lastName;
     }
 
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     public int getAge() {
-        return Age;
+        return age;
     }
 
     public void setAge(int age) {
-        Age = age;
+        this.age = age;
     }
 
     
