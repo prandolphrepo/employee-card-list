@@ -1,5 +1,54 @@
 body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+background: rgb(210,160,237);
+background: linear-gradient(100deg, rgba(210,160,237,1) 0%, rgba(175,17,223,1) 100%);
 }
+
+h1{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+   border-color: white;
+   border-width: 10%;
+    width: 300px;
+    margin-left: 40%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    display: flex;
+}
+
+.bigFont{
+    font-size: 20px;
+}
+
+
+
+img{
+    height: 500px;
+    width: 500px;
+}
+
+.cardContainer{
+    background-color: blueviolet; 
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    color: white;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+    box-shadow: 0, 1px, 1px, 0;
+}
+
