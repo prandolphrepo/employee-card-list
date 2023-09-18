@@ -17,18 +17,19 @@ function getResult(){
 
             //Classes
             employeeCard.classList.add("cardContainer");
-            employeeCompany.classList.add("bigFont");
+            employeeName.classList.add("bigFont");
        
+            
          
 
             //Employee Info
             employeeCompany.innerHTML = employees.companyName;
             employeeName.innerHTML = employees.firstName + " " + employees.lastName;
             employeeRole.innerHTML = employees.role;
-            employeeAge.innerHTML = employees.age;
+            employeeAge.innerHTML = "Age: " + employees.age;
             
             //Employee Card append
-            employeeCard.append(employeeImage, employeeCompany, employeeName, employeeRole, employeeAge);
+            employeeCard.append(employeeImage, employeeName, employeeCompany, employeeRole, employeeAge);
             employeeList.appendChild(employeeCard);
        });
     })
