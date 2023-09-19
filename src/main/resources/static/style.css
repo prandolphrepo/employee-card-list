@@ -7,9 +7,11 @@
 html, body{
     height: 100%;
     width: 100%;
-    background: linear-gradient(100deg, rgba(210,160,237,1) 0%, rgba(175,17,223,1) 100%);
+    background: rgb(166,107,212);
+    background: linear-gradient(180deg, rgba(166,107,212,1) 0%, rgba(88,32,133,1) 100%);
+   
+    
 }
-
 h1{
     text-align: center;
     padding-top: 3%;
@@ -22,51 +24,52 @@ form{
     position: absolute;
     display:flex;
     flex-direction: column;
-    width: 20vw;
-    height: 55vh;
+    align-items: center;
+    padding-top: 2%;
+    width: 40vw;
+    height: 80vh;
+    border: 2px solid white;
+    box-shadow: 3px 3px 0px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
     color: white;
     text-align: center;
-    left: 40%;
+    left: 30%;
 }
 
 label{
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+
 }
 
 input{
     margin-bottom: 5%;
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 1%;
     border-radius: 20px;
     width: 20vw;
     border-style: none;
 }
 
 .submitButton{
-    position: absolute;
-    top: 100%;
-    left: 28%;
-    margin-top: 5%;
-    padding: 5%;
+   
+    padding: 2%;
     border-radius: 10px;
     width: 10vw;
 }
 
 
 .resultButton{
-    position: absolute;
-    left: 28%;
-    top: 120%;
-    height: 5vh;
+    padding: 2%;
     width: 10vw;
     border-radius: 10px;
     border-style: none;
+    display: none;
+    
 }
 
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
 
@@ -102,6 +105,6 @@ img{
     border-radius: 20px;
     margin-left: 5%;
     margin-top: 5%;
-    box-shadow: 0, 1px, 1px, 0;
+    box-shadow: 3px 3px 0px 3px rgba(0, 0, 0, 0.25);
 }
 

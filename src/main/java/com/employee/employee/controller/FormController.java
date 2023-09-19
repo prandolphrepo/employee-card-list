@@ -43,7 +43,7 @@ public class FormController {
         throw new EmployeeAddException("Error: Employee can not be added");
       }
     } catch (EmployeeAddException e){
-      
+      e.getMessage();
       return "error";
 
     }
