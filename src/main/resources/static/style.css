@@ -38,19 +38,24 @@ form{
 
 label{
     padding-bottom: 3%;
-
 }
 
 input{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     padding: 1%;
     border-radius: 20px;
     width: 20vw;
     border-style: none;
 }
 
+.imageUpload{
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    width: 10vw;
+}
+
 .submitButton{
-   
     padding: 2%;
     border-radius: 10px;
     width: 10vw;
@@ -63,9 +68,7 @@ input{
     border-radius: 10px;
     border-style: none;
     display: none;
-    
 }
-
 
 a{
     text-decoration: none;

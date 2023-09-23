@@ -14,6 +14,7 @@ import com.employee.employee.EmployeeAddException;
 import com.employee.employee.models.Employees;
 import com.employee.employee.service.EmployeeService;
 
+
 @Controller
 public class FormController {
 
@@ -35,15 +36,16 @@ public class FormController {
     public @ResponseBody List<Employees> employeeResult(){
      return employeeService.getAllEmployees();
     }
+
     
     @PostMapping("/employee")
-    public String employeeSubmit(@ModelAttribute Employees employee){
+    public String employeeSubmit(@ModelAttribute Employees employee, Model model){
       try{
       if(employeeService.addEmployee(employee) == null){
         throw new EmployeeAddException("Error: Employee can not be added");
       }
     } catch (EmployeeAddException e){
-      e.getMessage();
+      model.addAttribute(e.getMessage());
       return "error";
 
     }
