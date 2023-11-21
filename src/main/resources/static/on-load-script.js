@@ -13,7 +13,11 @@ function getResult(){
             const employeeName = document.createElement("p");
             const employeeRole = document.createElement("p");
             const employeeAge = document.createElement("p");
-            const employeeImage = document.createElement("img");
+         
+            const employeeImg = document.createElement("img");
+
+           
+
 
             //Classes
             employeeCard.classList.add("cardContainer");
@@ -27,9 +31,11 @@ function getResult(){
             employeeName.innerHTML = employees.firstName + " " + employees.lastName;
             employeeRole.innerHTML = employees.role;
             employeeAge.innerHTML = "Age: " + employees.age;
+            employeeImg.src = employees.image;
+            employeeImg.alt = "Employee Image";
             
             //Employee Card append
-            employeeCard.append(employeeImage, employeeName, employeeCompany, employeeRole, employeeAge);
+            employeeCard.append(employeeName, employeeCompany, employeeRole, employeeAge, employeeImg);
             employeeList.appendChild(employeeCard);
        });
     })

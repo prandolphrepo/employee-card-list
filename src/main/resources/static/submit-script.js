@@ -2,9 +2,12 @@ const submitted = document.getElementById("submitted");
 const resultID = document.getElementById("resultID");
 const employeeForm = document.getElementById("employee-form");
 
-function form(){
-    const formData = new FormData(employeeForm);
 
+
+function form(){
+
+    const formData = new FormData(employeeForm);
+    
     fetch("/employee", {
 
         method: "POST",
@@ -14,6 +17,7 @@ function form(){
         if(response.ok){
             submit();
         }
+        
     })
 }
 

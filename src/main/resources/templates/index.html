@@ -8,7 +8,7 @@
 </head>
 <body>
         <h1>Employee Form</h1>
-        <form id="employee-form" action="#" th:action="@{/employee}" th:object="${employees}" method="post">
+        <form id="employee-form" action="#" th:action="@{/employee}" th:object="${employees}" method="post" enctype="multipart/form-data">
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" th:field="*{firstName}"name="firstName">
             <label for="lastName">Last Name</label>
@@ -16,15 +16,16 @@
             <label for="companyName">Company Name</label>
             <input type="text" id="companyName" th:field="*{companyName}" name="companyName">
             <label for="companyRoleName">Company Role</label>
-            <input type="text" id="companyRoleName" th:field="*{role}" name="companyRoleName">
+            <input type="text" id="companyRoleName" th:field="*{role}" name="role">
             <label for="age">Age</label>
             <input type="text" id="age" th:field="*{age}" name="age">
-            <button id="imageID" class="imageUpload">Upload Image</button>
+            <input id="uploadImage" name="image" type="file" class="imageUpload" value="Upload Image">
             <input id="submitted" class="submitButton" type="submit" value="Submit">
             <button id="resultID" class="resultButton"><a href="/result">Get Card Result!</a></button>
         </form>
-        <script src="https://upload-widget.cloudinary.com/global/all.js"></script>
-        <script src="upload-image-script.js"></script>
+        
         <script src="submit-script.js"></script>
+        
+        
 </body>
 </html>

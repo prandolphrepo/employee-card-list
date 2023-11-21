@@ -53,6 +53,7 @@ input{
     margin-bottom: 2%;
     border-radius: 10px;
     width: 10vw;
+    border-style: none;
 }
 
 .submitButton{
@@ -97,7 +98,7 @@ img{
     width: 10vw;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;;
-    background-color: white;
+   
 }
 
 .cardContainer{

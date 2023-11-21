@@ -28,18 +28,22 @@ public class Employees {
     @Column
     private int age;
 
+    @Column
+    private String image;
+
 
     public Employees(){
         
     }
 
-    public Employees(String companyName, String role, String firstName, String lastName, int age) {
-        this.companyName = companyName;
-        this.role = role;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-    }
+    // public Employees(String companyName, String role, String firstName, String lastName, int age, String image) {
+    //     this.companyName = companyName;
+    //     this.role = role;
+    //     this.firstName = firstName;
+    //     this.lastName = lastName;
+    //     this.age = age;
+    //     this.image = image;
+    // }
 
     public long getId() {
         return id;
@@ -89,5 +93,11 @@ public class Employees {
     }
 
     
-    
+     public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
 }
